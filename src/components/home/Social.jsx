@@ -4,7 +4,7 @@ import React from 'react'
 const Social = () => {
   return (
     <div className="home__social">
-        <a  href="https://api.whatsapp.com/send?phone=671949527&text=hello, more information please!" 
+          <a href="https://api.whatsapp.com/send?phone=237671949527&text=hello, more information please!" 
             target='_blank' className="home__social-icon"> 
             <i className="bx bxl-whatsapp contact__card-icon"></i>
         </a>
