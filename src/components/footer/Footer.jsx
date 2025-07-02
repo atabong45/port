@@ -1,7 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import './Footer.css'
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
         <div className="footer__container container">
@@ -9,25 +12,23 @@ const Footer = () => {
 
             <ul className="footer__list">
                 <li>
-                    <a href="#" className="footer__link"> Home </a>
-                </li>
-
-
-                <li>
-                    <a href="#about" className="footer__link">About</a>
+                    <a href="#" className="footer__link"> {t('nav.home')} </a>
                 </li>
 
                 <li>
-                    <a href="#skills" className="footer__link">Skills</a>
-                </li>
-
-
-                <li>
-                    <a href="#services" className="footer__link">Services</a>
+                    <a href="#about" className="footer__link">{t('nav.about')}</a>
                 </li>
 
                 <li>
-                    <a href="#portfolio" className="footer__link">Projects</a>
+                    <a href="#skills" className="footer__link">{t('nav.skills')}</a>
+                </li>
+
+                <li>
+                    <a href="#services" className="footer__link">{t('nav.services')}</a>
+                </li>
+
+                <li>
+                    <a href="#portfolio" className="footer__link">{t('nav.projects')}</a>
                 </li>
             </ul>
 
@@ -55,7 +56,7 @@ const Footer = () => {
             </div>
 
             <span className="footer__copy"> 
-                &#169; atabong_stephane. All right reserved
+                {t('footer.copyright')}
             </span>
         </div>
     </footer>

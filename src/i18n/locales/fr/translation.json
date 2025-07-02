@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "services": "Services",
+    "qualifications": "Qualifications",
+    "portfolio": "Portfolio",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "ATABONG EFON",
+    "subtitle": "Étudiant en informatique",
+    "description": "Actuellement en quatrième année d'études en informatique à l'ENSPY, je suis un passionné d'informatique avec un intérêt prononcé pour le développement web, les réseaux et la cybersécurité. Je fais preuve d'une grande aptitude à l'apprentissage et d'adaptabilité, complétées par une forte éthique de travail et un engagement inébranlable à surmonter les défis.",
+    "sayHello": "Dire Bonjour",
+    "scrollDown": "Défiler vers le bas"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Ma présentation",
+    "experience": "Expérience",
+    "experienceDesc": "2 ans d'études en informatique",
+    "completed": "Terminé",
+    "completedDesc": "20+ Projets",
+    "support": "Support",
+    "supportDesc": "En ligne 24/7",
+    "description": "En tant qu'étudiant ambitieux en informatique, je développe activement des compétences en développement backend, administration réseau et cybersécurité, passionné par la construction d'une base solide en informatique pour favoriser le succès futur dans l'industrie technologique",
+    "downloadCV": "Télécharger CV"
+  },
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Mon niveau technique",
+    "frontend": "Développeur frontend",
+    "backend": "Développeur backend",
+    "networking": "Réseaux",
+    "levels": {
+      "basic": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Ce que j'offre",
+    "viewMore": "Voir plus",
+    "productDesigner": {
+      "title": "Concepteur de produits",
+      "description": "Conception et maquette de produits pour les entreprises",
+      "services": [
+        "Je développe l'interface utilisateur",
+        "Je développe le backend",
+        "Je positionne votre marque d'entreprise",
+        "Développement de pages web"
+      ]
+    },
+    "uiuxDesigner": {
+      "title": "Designer UI/UX",
+      "description": "Création d'expériences utilisateur intuitives et engageantes",
+      "services": [
+        "Je développe l'interface utilisateur",
+        "Je développe le backend",
+        "Je positionne votre marque d'entreprise",
+        "Développement de pages web"
+      ]
+    },
+    "visualDesigner": {
+      "title": "Designer visuel",
+      "description": "Création de designs visuels convaincants",
+      "services": [
+        "Je développe l'interface utilisateur",
+        "Je développe le backend",
+        "Je positionne votre marque d'entreprise",
+        "Développement de pages web"
+      ]
+    }
+  },
+  "qualification": {
+    "title": "Qualifications",
+    "subtitle": "Mon parcours personnel",
+    "education": "Éducation",
+    "experience": "Expérience",
+    "educationItems": [
+      {
+        "title": "BAC C avec mention",
+        "subtitle": "Ly-Bi-Bo",
+        "date": "2019-2020"
+      },
+      {
+        "title": "Licence en ingénierie informatique",
+        "subtitle": "ENSPY",
+        "date": "2020-2022"
+      },
+      {
+        "title": "Études d'ingénierie informatique",
+        "subtitle": "ENSPY",
+        "date": "2023-présent"
+      }
+    ],
+    "experienceItems": [
+      {
+        "title": "Agent commercial",
+        "subtitle": "Douala Parfumery",
+        "date": "Stage d'été 2020"
+      },
+      {
+        "title": "Professeur Prépa-Concours",
+        "subtitle": "Icorp",
+        "date": "Stage d'été 2021"
+      },
+      {
+        "title": "Professeur de prépa et chef du département de mathématiques",
+        "subtitle": "Learning Academia",
+        "date": "Stage d'été 2022"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Entrer en contact",
+    "subtitle": "Contactez-moi",
+    "talkToMe": "Parlez-moi",
+    "writeProject": "Écrivez-moi votre projet",
+    "email": "Email",
+    "whatsapp": "Whatsapp",
+    "telegram": "Telegram",
+    "writeMe": "Écrivez-moi",
+    "form": {
+      "mail": "Email",
+      "name": "Nom",
+      "project": "Projet",
+      "mailPlaceholder": "Insérez votre email",
+      "namePlaceholder": "Insérez votre nom",
+      "projectPlaceholder": "Écrivez votre projet",
+      "sendMessage": "Envoyer le message"
+    }
+  },
+  "footer": {
+    "copyright": "© atabong_stephane. Tous droits réservés"
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Mon travail récent",
+    "viewCode": "Voir le code",
+    "viewProject": "Voir le projet",
+    "backToHome": "Retour à l'accueil"
+  },
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre"
+  }
+}

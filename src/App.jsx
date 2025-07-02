@@ -1,22 +1,23 @@
 import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Skills from './components/skills/Skills';
-
-import './App.css'
 import About from './components/about/About';
 import Services from './components/services/Services';
 import Qualification from './components/qualification/Qualification';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScroolUp from './components/scrollup/ScroolUp';
+import Projects from './components/projects/Projects';
+import { ThemeProvider } from './contexts/ThemeContext';
 
-function App() {
+import './App.css'
 
+function MainPage() {
   return (
     <>
-      <Header />
-
       <main className="main">
         <Home />
         <About />
@@ -25,10 +26,23 @@ function App() {
         <Qualification />
         <Contact />
       </main>
-
-      <Footer />
-      <ScroolUp />
     </>
+  );
+}
+
+function App() {
+  return (
+    <ThemeProvider>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+        <Footer />
+        <ScroolUp />
+      </Router>
+    </ThemeProvider>
   )
 }
 

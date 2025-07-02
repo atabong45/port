@@ -1,28 +1,28 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import './Services.css'
 
 const Services = () => {
+    const { t } = useTranslation();
     const [toggleState, setToggleState] = useState(0);
 
     const toggleTab = (index) => {
         setToggleState(index);
     }
 
-
-
   return (
     <section className="services section" id="services">
-        <h2 className="section__title">Services</h2>
-        <span className="section__subtitle">What i offer</span>
+        <h2 className="section__title">{t('services.title')}</h2>
+        <span className="section__subtitle">{t('services.subtitle')}</span>
         
         <div className="services__container container grid">
             <div className="services__content">
                 <div>
                     <i className="uil uil-web-grid services__icon"></i>
-                    <h3 className="services__title">Product <br /> Designer</h3>
+                    <h3 className="services__title">{t('services.productDesigner.title')}</h3>
                 </div>
 
-                <span className='services__button'onClick={()=>{toggleTab(1)}}>view more 
+                <span className='services__button'onClick={()=>{toggleTab(1)}}>{t('services.viewMore')}
                     <i className="uil uil-arrow-right services__button-icon"></i>
                 </span>
 
@@ -30,47 +30,30 @@ const Services = () => {
                     <div className="services__modal-content">
                         <i className="uil uil-times services__modal-close" onClick={()=>{toggleTab(0)}}></i>
                     
-                        <h3 className="services__modal-title">Product Designer</h3>
+                        <h3 className="services__modal-title">{t('services.productDesigner.title')}</h3>
                         <p className="services__modal-description">
-                            Design and mockup of products for compagnies
+                            {t('services.productDesigner.description')}
                         </p>
 
                         <ul className="services__modal-services grid">
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info"> I develop the user interface</p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info"> I develop the backend </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info"> I position your company brand</p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info"> web page development </p>
-                            </li>
+                            {t('services.productDesigner.services', { returnObjects: true }).map((service, index) => (
+                                <li key={index} className="services__modal-service">
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
+                                    <p className="services__modal-info">{service}</p>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
             </div>
 
-
-
-
-
             <div className="services__content">
                 <div>
                     <i className="uil uil-arrow services__icon"></i>
-                    <h3 className="services__title">UI/UX <br /> Designer</h3>
+                    <h3 className="services__title">{t('services.uiuxDesigner.title')}</h3>
                 </div>
 
-                <span className='services__button' onClick={()=>{toggleTab(2)}}>view more
+                <span className='services__button' onClick={()=>{toggleTab(2)}}>{t('services.viewMore')}
                     <i className="uil uil-arrow-right services__button-icon"></i>
                 </span>
 
@@ -78,31 +61,18 @@ const Services = () => {
                     <div className="services__modal-content">
                         <i className="uil uil-times services__modal-close" onClick={()=>{toggleTab(0)}}></i>
                     
-                        <h3 className="services__modal-title">UI/UX Designer</h3>
+                        <h3 className="services__modal-title">{t('services.uiuxDesigner.title')}</h3>
                         <p className="services__modal-description">
-
+                            {t('services.uiuxDesigner.description')}
                         </p>
 
                         <ul className="services__modal-services grid">
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info"> I develop the user interface</p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info"> I develop the backend </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info"> I position your company brand</p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info"> web page development </p>
-                            </li>
+                            {t('services.uiuxDesigner.services', { returnObjects: true }).map((service, index) => (
+                                <li key={index} className="services__modal-service">
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
+                                    <p className="services__modal-info">{service}</p>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
@@ -111,10 +81,10 @@ const Services = () => {
             <div className="services__content">
                 <div>
                     <i className="uil uil-edit services__icon"></i>
-                    <h3 className="services__title">Visual <br /> Designer</h3>
+                    <h3 className="services__title">{t('services.visualDesigner.title')}</h3>
                 </div>
                                
-                <span className='services__button' onClick={()=>{toggleTab(3)}}>view more
+                <span className='services__button' onClick={()=>{toggleTab(3)}}>{t('services.viewMore')}
                     <i className="uil uil-arrow-right services__button-icon"></i>
                 </span>
 
@@ -122,31 +92,18 @@ const Services = () => {
                     <div className="services__modal-content">
                         <i className="uil uil-times services__modal-close" onClick={()=>{toggleTab(0)}}></i>
                     
-                        <h3 className="services__modal-title">Visual Designer</h3>
+                        <h3 className="services__modal-title">{t('services.visualDesigner.title')}</h3>
                         <p className="services__modal-description">
-
+                            {t('services.visualDesigner.description')}
                         </p>
 
                         <ul className="services__modal-services grid">
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info"> I develop the user interface</p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info"> I develop the backend </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info"> I position your company brand</p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info"> web page development </p>
-                            </li>
+                            {t('services.visualDesigner.services', { returnObjects: true }).map((service, index) => (
+                                <li key={index} className="services__modal-service">
+                                    <i className="uil uil-check-circle services__modal-icon"></i>
+                                    <p className="services__modal-info">{service}</p>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>

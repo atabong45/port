@@ -5,13 +5,22 @@
 
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color:  hsl(var(--hue), var(--sat), 46%);
-  --header-color: hsl(var(--hue), var(--sat), 84%);
-  --body-color:  hsl(var(--hue), var(--sat), 94%);
-  --container-color: #fff;
+  
+  /* Light theme colors */
+  --title-color-light: hsl(var(--hue), var(--sat), 20%);
+  --title-color-dark-light: hsl(var(--hue), var(--sat), 0%);
+  --text-color-light: hsl(var(--hue), var(--sat), 46%);
+  --header-color-light: hsl(var(--hue), var(--sat), 84%);
+  --body-color-light: hsl(var(--hue), var(--sat), 94%);
+  --container-color-light: #fff;
 
+  /* Dark theme colors */
+  --title-color-dark: hsl(var(--hue), var(--sat), 95%);
+  --title-color-dark-dark: hsl(var(--hue), var(--sat), 100%);
+  --text-color-dark: hsl(var(--hue), var(--sat), 75%);
+  --header-color-dark: hsl(var(--hue), var(--sat), 12%);
+  --body-color-dark: hsl(var(--hue), var(--sat), 8%);
+  --container-color-dark: hsl(var(--hue), var(--sat), 12%);
 
   --body-font: "Poppins", sans-serif;
 
@@ -40,6 +49,26 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+}
+
+/* Default to light theme */
+:root {
+  --title-color: var(--title-color-light);
+  --title-color-dark: var(--title-color-dark-light);
+  --text-color: var(--text-color-light);
+  --header-color: var(--header-color-light);
+  --body-color: var(--body-color-light);
+  --container-color: var(--container-color-light);
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --title-color: var(--title-color-dark);
+  --title-color-dark: var(--title-color-dark-dark);
+  --text-color: var(--text-color-dark);
+  --header-color: var(--header-color-dark);
+  --body-color: var(--body-color-dark);
+  --container-color: var(--container-color-dark);
 }
 
 @media screen and (max-width: 992px) {
@@ -74,6 +103,7 @@ body, button, input, textarea {
 body{
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .main{
   background-color: var(--body-color);
@@ -144,6 +174,7 @@ img{
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
@@ -157,6 +188,79 @@ img{
 .button--flex {
   display: inline-flex;
   align-items: center;
+}
+
+/*===================================   THEME TOGGLE   =======================================*/
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--title-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--header-color);
+}
+
+/*===================================   LANGUAGE SELECTOR   =======================================*/
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.language-button {
+  background: none;
+  border: none;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.language-button:hover {
+  background-color: var(--header-color);
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--container-color);
+  border: 1px solid var(--header-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: var(--z-tooltip);
+  min-width: 100px;
+}
+
+.language-option {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-option:hover {
+  background-color: var(--header-color);
+}
+
+.language-option.active {
+  background-color: var(--title-color);
+  color: var(--container-color);
 }
 
 /*===================================   BREAKPOINTS   =======================================*/
@@ -208,33 +312,3 @@ img{
 
   }
 }
-
-
-
-/*===================================   a   =======================================*/
-  /*
-  //    FOR   LARGE   SCREEN 
-  @media screen and (max-width: 992px){
-    
-  }
-  
-  
-  //  FOR   MEDIUM   SCREEN        
-  @media screen and (max-width: 768px){
-
-  }
-  
-  
-  //    FOR   LARGE   SCREEN        
-  @media screen and (max-width: 576px){
-    
-  }
-  
-  
-  //   FOR   SMALL   SCREEN        
-  @media screen and (max-width: 350px){
-    
-  }
-  
-  
-  */

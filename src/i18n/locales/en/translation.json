@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "services": "Services",
+    "qualifications": "Qualifications",
+    "portfolio": "Portfolio",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "ATABONG EFON",
+    "subtitle": "IT student",
+    "description": "Currently pursuing my fourth year of studies in computer science at ENSPY, I am an ardent computer science enthusiast with a pronounced interest in web development, networking, and cybersecurity. I exhibit a high aptitude for learning and adaptability, complemented by a strong work ethic and unwavering commitment to overcoming challenge.",
+    "sayHello": "Say Hello",
+    "scrollDown": "Scroll Down"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "My introduction",
+    "experience": "Experience",
+    "experienceDesc": "2 years of IT studying",
+    "completed": "Completed",
+    "completedDesc": "20+ Projects",
+    "support": "Support",
+    "supportDesc": "Online 24/7",
+    "description": "As an ambitious IT student, i'm actively developing skills in backend development, network administration, and cybersecurity, passionate about building a strong foundation in computer science to drive future success in the tech industry",
+    "downloadCV": "Download CV"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My technical level",
+    "frontend": "Frontend developer",
+    "backend": "Backend developer",
+    "networking": "Networking",
+    "levels": {
+      "basic": "Basic",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What i offer",
+    "viewMore": "View more",
+    "productDesigner": {
+      "title": "Product Designer",
+      "description": "Design and mockup of products for companies",
+      "services": [
+        "I develop the user interface",
+        "I develop the backend",
+        "I position your company brand",
+        "Web page development"
+      ]
+    },
+    "uiuxDesigner": {
+      "title": "UI/UX Designer",
+      "description": "Creating intuitive and engaging user experiences",
+      "services": [
+        "I develop the user interface",
+        "I develop the backend",
+        "I position your company brand",
+        "Web page development"
+      ]
+    },
+    "visualDesigner": {
+      "title": "Visual Designer",
+      "description": "Creating compelling visual designs",
+      "services": [
+        "I develop the user interface",
+        "I develop the backend",
+        "I position your company brand",
+        "Web page development"
+      ]
+    }
+  },
+  "qualification": {
+    "title": "Qualification",
+    "subtitle": "My personal journey",
+    "education": "Education",
+    "experience": "Experience",
+    "educationItems": [
+      {
+        "title": "BAC C with honors",
+        "subtitle": "Ly-Bi-Bo",
+        "date": "2019-2020"
+      },
+      {
+        "title": "IT Engineering BSc",
+        "subtitle": "ENSPY",
+        "date": "2020-2022"
+      },
+      {
+        "title": "IT Engineering studies",
+        "subtitle": "ENSPY",
+        "date": "2023-present"
+      }
+    ],
+    "experienceItems": [
+      {
+        "title": "Commercial Agent",
+        "subtitle": "Douala Parfumery",
+        "date": "Summer Intern 2020"
+      },
+      {
+        "title": "Prepa-Concours Professor",
+        "subtitle": "Icorp",
+        "date": "Summer Intern 2021"
+      },
+      {
+        "title": "Prep Teacher and Math Department head",
+        "subtitle": "Learning Academia",
+        "date": "Summer Intern 2022"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Contact Me",
+    "talkToMe": "Talk to me",
+    "writeProject": "Write me your project",
+    "email": "Email",
+    "whatsapp": "Whatsapp",
+    "telegram": "Telegram",
+    "writeMe": "Write Me",
+    "form": {
+      "mail": "Mail",
+      "name": "Name",
+      "project": "Project",
+      "mailPlaceholder": "Insert your email",
+      "namePlaceholder": "Insert your name",
+      "projectPlaceholder": "Write your project",
+      "sendMessage": "Send Message"
+    }
+  },
+  "footer": {
+    "copyright": "© atabong_stephane. All rights reserved"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "My recent work",
+    "viewCode": "View Code",
+    "viewProject": "View Project",
+    "backToHome": "Back to Home"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  }
+}

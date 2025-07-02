@@ -1,0 +1,159 @@
+.projects {
+  padding-top: 8rem;
+  min-height: 100vh;
+}
+
+.projects__back-btn {
+  margin-bottom: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.projects__container {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.projects__card {
+  background-color: var(--container-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.15);
+}
+
+.projects__img-container {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.projects__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.projects__card:hover .projects__img {
+  transform: scale(1.1);
+}
+
+.projects__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projects__card:hover .projects__overlay {
+  opacity: 1;
+}
+
+.projects__buttons {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.projects__button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--small-font-size);
+  white-space: nowrap;
+}
+
+.projects__content {
+  padding: 1.5rem;
+}
+
+.projects__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.75rem;
+  color: var(--title-color);
+}
+
+.projects__description {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.projects__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.projects__tech-tag {
+  background-color: var(--title-color);
+  color: var(--container-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: var(--tiny-font-size);
+  font-weight: var(--font-medium);
+}
+
+/*===================================   BREAKPOINTS   =======================================*/
+/*      FOR   LARGE   SCREEN        */
+@media screen and (max-width: 992px){
+  .projects__container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/*      FOR   MEDIUM   SCREEN        */
+@media screen and (max-width: 768px){
+  .projects {
+    padding-top: 6rem;
+  }
+  
+  .projects__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .projects__buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .projects__button {
+    padding: 0.5rem 1rem;
+    font-size: var(--tiny-font-size);
+  }
+}
+
+/*      FOR   SMALL   SCREEN        */
+@media screen and (max-width: 350px){
+  .projects__container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+  
+  .projects__buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .projects__content {
+    padding: 1rem;
+  }
+}
